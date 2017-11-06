@@ -19,7 +19,7 @@
     "cookieMaxAge": "/Users/budblack/ws/t/fetchegg/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/budblack/ws/t/fetchegg/node_modules/egg-watcher/config/config.local.js",
+    "type": "/Users/budblack/ws/t/fetchegg/node_modules/egg-watcher/config/config.default.js",
     "eventSources": {
       "default": "/Users/budblack/ws/t/fetchegg/node_modules/egg-watcher/config/config.default.js",
       "development": "/Users/budblack/ws/t/fetchegg/node_modules/egg-watcher/config/config.default.js"
@@ -55,7 +55,7 @@
       "value": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.local.js",
+      "enable": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.default.js",
       "maxAge": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.default.js",
       "includeSubdomains": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.default.js"
     },
@@ -83,12 +83,6 @@
   "helper": {
     "shtml": "/Users/budblack/ws/t/fetchegg/node_modules/egg-security/config/config.default.js"
   },
-  "development": {
-    "watchDirs": "/Users/budblack/ws/t/fetchegg/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/budblack/ws/t/fetchegg/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/budblack/ws/t/fetchegg/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/budblack/ws/t/fetchegg/node_modules/egg-development/config/config.default.js"
-  },
   "logrotator": {
     "filesRotateByHour": "/Users/budblack/ws/t/fetchegg/node_modules/egg-logrotator/config/config.default.js",
     "hourDelimiter": "/Users/budblack/ws/t/fetchegg/node_modules/egg-logrotator/config/config.default.js",
@@ -103,8 +97,9 @@
     "dir": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js",
     "dynamic": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js",
     "preload": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js"
+    "buffer": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.prod.js",
+    "maxFiles": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.default.js",
+    "maxAge": "/Users/budblack/ws/t/fetchegg/node_modules/egg-static/config/config.prod.js"
   },
   "jsonp": {
     "limit": "/Users/budblack/ws/t/fetchegg/node_modules/egg-jsonp/config/config.default.js",
@@ -113,7 +108,7 @@
   },
   "view": {
     "root": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.local.js",
+    "cache": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.default.js",
     "defaultExtension": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.default.js",
     "defaultViewEngine": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.default.js",
     "mapping": "/Users/budblack/ws/t/fetchegg/node_modules/egg-view/config/config.default.js"
@@ -213,9 +208,7 @@
     "coreLogName": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.default.js",
     "agentLogName": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.default.js",
     "errorLogName": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.default.js",
-    "coreLogger": {
-      "consoleLevel": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.local.js"
-    },
+    "coreLogger": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.default.js",
     "allowDebugAtProd": "/Users/budblack/ws/t/fetchegg/node_modules/egg/config/config.default.js"
   },
   "httpclient": {

@@ -2,13 +2,18 @@
 module.exports = app => {
   return class extends app.Controller {
     async index () {
-      const { url }   = this.ctx.query;
-      let result      = await app.curl(
-          url
+      const { ctx } = this,
+            { url } = this.ctx.query;
+      let result    = await app.curl(
+          url, {
+            streaming: true,
+            timeout  : [1000, 30000]
+          }
       );
-      this.ctx.status = result.status;
-      this.ctx.set(result.headers);
-      this.ctx.body = result.data;
+      
+      ctx.status = result.status;
+      ctx.set(result.headers);
+      ctx.body = result.res;
     }
   };
 };
