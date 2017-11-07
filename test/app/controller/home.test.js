@@ -1,15 +1,20 @@
 'use strict';
-
-const { app, assert } = require('egg-mock/bootstrap');
+const mm = require('egg-mock');
+const assert = require('assert');
 
 describe('test/app/controller/home.test.js', () => {
+  let app;
+  before(() => {
+    app = mm.app();
+    return app.ready();
+  });
 
-  it('should assert', function* () {
+  afterEach(mm.restore);
+  after(() => app.close());
+
+  it('should assert', () => {
     const pkg = require('../../../package.json');
     assert(app.config.keys.startsWith(pkg.name));
-
-    // const ctx = app.mockContext({});
-    // yield ctx.service.xx();
   });
 
   it('should GET /', () => {

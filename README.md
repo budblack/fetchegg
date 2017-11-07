@@ -1,4 +1,4 @@
-# fetchegg
+# ot170726
 
 
 
@@ -9,18 +9,18 @@
 see [egg docs][egg] for more detail.
 
 ### Development
-
-```bash
-$ npm i
+```shell
+$ npm install
 $ npm run dev
-$ open http://localhost:7001/
+$ open http://localhost:7001/news
 ```
 
 ### Deploy
 
-```bash
-$ npm start
-$ npm stop
+Use `EGG_SERVER_ENV=prod` to enable prod mode
+
+```shell
+$ EGG_SERVER_ENV=prod npm start
 ```
 
 ### npm scripts

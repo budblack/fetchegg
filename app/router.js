@@ -1,5 +1,7 @@
 'use strict';
 
-module.exports = app => {
-  app.get('/', 'home.index');
+module.exports = (app) => {
+  const { pubSite: ConPubSite } = app.controller;
+  
+  app.get('/', ConPubSite.page.showIndex);
 };

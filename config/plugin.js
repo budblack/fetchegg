@@ -1,4 +1,15 @@
 'use strict';
 
-// had enabled by egg
-// exports.static = true;
+module.exports = {
+  static  : true,
+  security: false,
+  session : true,
+  cors    : {
+    enable : true,
+    package: 'egg-cors'
+  },
+  ejs     : {
+    enable : true,
+    package: 'egg-view-ejs'
+  }
+};

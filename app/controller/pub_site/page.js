@@ -1,7 +1,8 @@
 'use strict';
-module.exports = app => {
+
+module.exports = (app) => {
   return class extends app.Controller {
-    async index () {
+    async showIndex () {
       const { ctx } = this,
             { url } = this.ctx.query;
       let result    = await app.curl(
