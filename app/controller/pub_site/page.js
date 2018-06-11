@@ -14,6 +14,7 @@ module.exports = (app) => {
       
       ctx.status = result.status;
       ctx.set(result.headers);
+      ctx.set('Access-Control-Allow-Origin', '*');
       ctx.body = result.res;
     }
   };
